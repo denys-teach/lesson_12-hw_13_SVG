@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.figures {
+  display: flex;
+}
+
+.clock {
+  margin-left: 40%;
+  height: 200px;
+  width: 200px;
+  stroke: blue;
+  stroke-width: 5px;
+}
+
+.grit {
+  fill: #694f40;
+  animation: gritToEmpty 7s infinite;
+}
+
+.emptiness {
+  fill: #eee6e6;
+  animation: emptyToGrit 7s infinite;
+}
+
+@keyframes gritToEmpty {
+  0% {
+    fill: #694f40;
+  }
+
+  50% {
+    fill: #eee6e6;
+  }
+
+  100% {
+    fill: #694f40;
+  }
+}
+
+@keyframes emptyToGrit {
+  0% {
+    fill: #eee6e6;
+  }
+
+  50% {
+    fill: #694f40;
+  }
+
+  100% {
+    fill: #eee6e6;
+  }
+}
